@@ -1,0 +1,87 @@
+body, html{
+  height: 100%;
+}
+
+/*Navigatiion CSS Starts*/
+
+
+.navbar-default{
+  background-color: #ff0006 !important;
+}
+.navbar-default .container-fluid{
+  max-width: 1450px;
+}
+.navbar-default .navbar-brand{
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-right{
+  list-style: none;
+  display: inline-block;
+  margin-left: 1px;
+}
+ul.navbar-right li{
+  display: inline-block;
+  margin-left: -1px;
+}
+.navbar-default .navbar-right .nav-link{
+  display: block;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav .nav-link:hover{
+  background-color: #080607;
+  transition: 1s;
+  
+}
+
+
+
+/*Navigatiion CSS End*/
+
+
+
+
+/*Footer Starts*/
+
+.footer {
+  background: #95ec08;
+  padding-bottom: 5px;
+}
+
+.footer p {
+  padding: 5px;
+  color: #ddd;
+  line-height: 5px;
+}
+
+.footerIcon a {
+  line-height: 5px;
+  width: 25px;
+  display: block;
+  float: left;
+  border: 1px solid #ffff;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  background: #eb0505;
+  font-size: 20px;
+  margin: 20px 10px;
+}
+
+
+
+/*Footer End*/
+
+
+
+
+
+
