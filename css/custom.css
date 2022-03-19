@@ -9,7 +9,7 @@ body, html{
   background-color: #ff0006 !important;
 }
 .navbar-default .container-fluid{
-  max-width: 1450px;
+  max-width: 100%;
 }
 .navbar-default .navbar-brand{
   display: block;

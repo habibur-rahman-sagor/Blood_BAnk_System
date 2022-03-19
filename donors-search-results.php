@@ -26,9 +26,7 @@ include ('includes/header.php');
 .table{
     display: block;
     
-    margin: 20px 0px;
-    margin-left: 0px;
-    padding: 20px 0;
+    
 }
 
 
@@ -53,7 +51,7 @@ include ('includes/header.php');
 </div>
 
 
-<div class="container" >
+<div class="container-fluid" >
     <div class="row">
         <div class="col-md-6 offset-md-3">
             
@@ -62,13 +60,14 @@ include ('includes/header.php');
                 <table class="table ">
 			        <tr>
                         <th>S.No.</th>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Blood Group</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+				        <th>Gender</th>
+				        <th>Blood Group</th>
                         <th>Division</th>
-                        <th>City</th>
-                        <th>Contact No.</th>
-                        <th>Email</th>
+				        <th>City</th>
+				        <th>Contact</th>
+				        <th>Email</th>
 				    </tr>
                     <?php
                     $search = $_POST['search'];
@@ -77,24 +76,28 @@ include ('includes/header.php');
                     $count= mysqli_num_rows($res);
                     if($count>0){
                         while($row=mysqli_fetch_assoc($res)){
-                            $donor_id=$row['donor_id'];
-                            $First_Name=$row['First_Name'];
-                            $Gender=$row['Gender'];
-                            $Blood_Group=$row['Blood_Group'];
-                            $City=$row['City'];
-                            $Division=$row['Division'];
-                            $Contact=$row['Contact'];
-                            $Email=$row['Email'];
+                            
+                            $donor_id = $row['donor_id'];
+                                $First_Name = $row['First_Name'];
+                                $Last_Name = $row['Last_Name'];
+                                $Gender = $row['Gender'];
+                                $Blood_Group = $row['Blood_Group'];
+                                $Division = $row['Division'];
+                                $City = $row['City'];
+                                $Contact = $row['Contact'];
+                                $Email = $row['Email'];
+                                
                             ?>
                     <tr>
-                        <th><?php echo  $donor_id; ?>.</th>
-                        <th><?php echo  $First_Name; ?></th>
-                        <th><?php echo  $Gender; ?></th>
-                        <th><?php echo  $Blood_Group; ?></th>
-                        <th><?php echo  $City; ?></th>
-                        <th><?php echo  $Division; ?></th>
-                        <th><?php echo  $Contact; ?></th>
-                        <th><?php echo  $Email; ?></th>
+                        <td><?php echo $donor_id; ?></td>
+                        <td><?php echo $First_Name; ?></td>
+                        <td><?php echo $Last_Name; ?></td>
+                        <td><?php echo $Gender; ?></td>
+                        <td><?php echo $Blood_Group; ?></td>
+                        <td><?php echo $Division; ?></td>
+                        <td><?php echo $City; ?></td>
+                        <td><?php echo $Contact; ?></td>
+                        <td><?php echo $Email; ?></td>
 				    </tr>
                     <?php
                 }

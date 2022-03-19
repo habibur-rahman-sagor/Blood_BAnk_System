@@ -88,8 +88,9 @@
   
   <ul class="sidebar-navigation">
     <li><a href="donor-dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-    <li><a href="donor-dashboard-profile.php">
-      <?php
+    <li><a href="donor-dashboard-profile.php"><i class="fa fa-envelope fa-lg"></i> Profile
+      
+    <!-- <?php
                    if(isset($_SESSION['Email']))
                    {
                         //echo " ".$_SESSION['Email']."";
@@ -102,11 +103,11 @@
                     echo "  <a href='index.php'>"; 
                     echo "  </a>";
                    }
-                   ?>
+                   ?> -->
       
-    
-    <i class="fa fa-envelope fa-lg"></i> Profile</a></li>
+    </a></li>
 	  <li><a href="donor-dashboard-update.php"><i class="fa fa-search fa-lg"></i> Update</a></li>
+    <li><a href="logout.php"><i class="fa fa-search fa-lg"></i> Sign Out</a></li>
   </ul>
 
 </div>

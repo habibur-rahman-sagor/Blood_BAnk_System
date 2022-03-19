@@ -37,7 +37,7 @@
 
 
 
-<div class="container"  style='margin-top: 62px;'>
+<div class="container"  style='margin-top: 56px;'>
 	<div class="row">
 		<div>
             <?php include('donor-dashboard-sidenav.php'); ?>
@@ -63,7 +63,7 @@
 
 
         
-<div class="container" >
+<div class="container" style="padding: 60px 0; margin-right:20px;">
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <div class="donor-dashboard">

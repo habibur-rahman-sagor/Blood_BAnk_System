@@ -16,23 +16,22 @@ include('database/blood_bank.php'); ?>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php"><i class="fa fa-home"></i> Home</a>
                 </li>
+                
                 <li class="nav-item">
-                <i class="fas fa-hand-holding-medical"><a class="nav-link" href="donor-dashboard.php">
-                    <?php
+                <a class="nav-link" href="donor-dashboard.php">
+                <?php
                    if(isset($_SESSION['Email']))
                    {
-                        echo "donate";
-                        echo "  <a href='donar-dashboard.php'>"; 
-                        echo "  </a>";
+                    
+                    echo  "<a class='nav-link scrollto'  href='donor-dashboard.php'> Dashboard</a>";
+                    
                    }
-                   else 
+                   else
                    {
-                    echo "donate";
-                    echo "  <a href='sign-in.php'>"; 
-                    echo "  </a>";
+                    echo  "<a class='nav-link scrollto'  href='sign-in.php'> Donate</a>";
                    }
-                   ?>
-                </a></i> 
+                 ?>
+                </a>
 
 
                     
@@ -44,21 +43,10 @@ include('database/blood_bank.php'); ?>
                     <a class="nav-link" href="about.php"><i class="fas fa-info-circle"></i> About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php"><i class="fas fa-info-circle"></i> Contact Us</a>
+                    <a class="nav-link" href="contact.php"><i class="fa-solid fa-envelope"></i> Contact Us</a>
                 </li>
-                <li class="nav-item">
-                <?php  
-                              
-                              if(isset($_SESSION['Email']))
-                              {
-                                echo "<a class='nav-link scrollto' href='logout.php'>Sign Out</a>";
-                              }
-                              else
-                              {
-                                echo  "<a class='nav-link scrollto'  href='sign-in.php'>Sign In</a>";
-                              }
-                            ?>
-                </li>
+                
+                            
             </ul>
         </div>
     </div>

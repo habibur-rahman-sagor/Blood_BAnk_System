@@ -11,7 +11,7 @@
             <ul class="navbar-nav ml-auto navbar-right">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    <a class="nav-link" href="admin-dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a>
                 </li>
                 
                 <li class="nav-item">

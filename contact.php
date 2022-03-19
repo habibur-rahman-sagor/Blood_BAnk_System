@@ -6,85 +6,102 @@ include ('includes/header.php');
 
 ?>
 
+<style>
 
+.contact-us{
+  
+  color: #ff0006;
+  font-size: bold;
+  text-align: center;
+  margin-top: 125px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.contact{
+		
+        padding: 30px 30px;
+        margin: 10px 20px;
+        background-color: #151515;
+        border-radius: 10px;
+	}
+
+    .btn-default{
+		color: white;
+		border-radius: 25px;
+		padding: 10px 30px;
+        margin-top: 20px;
+		font-size: 22px;
+		font-weight: 700;
+		text-align: center;
+		background-color: #ff0006;
+	}
+
+
+</style>
 
 
 
 
 <!-- Page Content -->
-<div class="container" style="margin-top:70px;">
-
-<div class="row">
-    <div class="col-md-8">
-            
-    <h3 class='text-primary'>Send us a Message</h3>
-    <form method="post" action="contact.php" role="form" >
-        <div class="control-group form-group">
-            <div class="controls">
-                <label>Full Name:</label>
-                <input type="text" class="form-control" name="name" required>
-                <p class="help-block"></p>
-            </div>
+<div class="container-fluid">
+    <div class="row">
+         <div class="col-md-6 offset-md-3">
+             <div class="contact-us">
+                <h1 class="text-center">Contact Us</h1>
+             </div>
         </div>
-        <div class="control-group form-group">
-            <div class="controls">
-                <label>Phone Number:</label>
-                <input type="tel" class="form-control" name="phone" required>
-            </div>
-        </div>
-        <div class="control-group form-group">
-            <div class="controls">
-                <label>Email Address:</label>
-                <input type="email" class="form-control" name="email"  >
-            </div>
-        </div>
-        <div class="control-group form-group">
-            <div class="controls">
-                <label>Message:</label>
-                <textarea rows="5" cols="100" class="form-control" name="message" required maxlength="999" style="resize:none"></textarea>
-            </div>
-        </div>
-        <div id="success"></div>
-        <!-- For success/fail messages -->
-        <button type="submit" class="btn btn-primary" name="submit"><i class='fa fa-send'></i> Send Message</button>
-    </form>
-    
-</div>
-
-<div class="col-md-4">
-    <h3 class='text-primary'>Contact Details</h3>
-    <p>
-        Blood Bank &amp; <br>Friend Medical Trust, <br>
-        34/44 ,Cherry Street,<br>
-        Nethimedu-627813.<br>
-        Salem Dt.
-    </p>
-    <p><i class="fa fa-phone"></i> 
-        <abbr title="Phone">P</abbr>: 908776655</p>
-    <p><i class="fa fa-envelope-o"></i> 
-        <abbr title="Email">E</abbr>: <a href="#" >bloodbankin@gmail.com</a>
-    </p>
-    <p><i class="fa fa-clock-o"></i> 
-        <abbr title="Hours">H</abbr>: 24*7</p>
-    
-    <ul class="list-unstyled list-inline list-social-icons">
-        <li>
-            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-        </li>
-    </ul>
-</div>
+    </div>
 </div>
 
 
+
+
+<div class="container-fluid" style="margin: 70px 0px;">
+    <div class="row">
+         <div class="col-md-6 offset-md-3">
+             <div class="contact">
+             <h3 class="text-center" style="padding-bottom: 20px; color: #ff0006;" >Send us a Message</h3>
+                <form method="post" action="contact.php" role="form" >
+                    <div class="control-group form-group" style="color: #ff0006;">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" name="name" required>
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group" style="color: #ff0006;">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="control-group form-group" style="color: #ff0006;">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" name="email"  >
+                        </div>
+                    </div>
+                    <div class="control-group form-group" style="color: #ff0006;">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="5" cols="100" class="form-control" name="message" required maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+
+                    <div class="form-group text-center">
+
+                         <button type="submit" class="btn btn-lg btn-default" name="submit"><i class='fa fa-send'></i> Send Message</button>
+                
+                    </div>
+                
+                </form>
+             </div>
+        </div>
+    </div>
+</div>
 
 
 <?php 

@@ -20,19 +20,22 @@
 
 
 .page-header{
-    padding: 100px 0px 0px 0px;
+    text-align: center;
     color: #ff0006;
+    font-size: 40px;
 }
 
 .signin-form{
     
-    padding: 50px 0;
+    padding: 50px 50px;
+    text-align: center;
 }
 
 .btn-default{
     color: white;
     border-radius: 25px;
     padding: 10px 30px;
+    margin-top: 20px;
     font-size: 22px;
     font-weight: 700;
     background-color: #ff0006;
@@ -58,22 +61,23 @@
         </div>
     </div>
 
-    <div class="container" style="margin-left: 100px;">
+    <div class="container size">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="signin-form">
                     <form action="" method="post">
-			    	  	<div class="form-group">
-							<label for="user_name" class="text-primary">User Name</label>
-			    		    <input class="form-control" name="username"  id="user" type="text" required>
+
+			    	  	<div class="form-group" style="color: #ff0006;">
+							<label for="username" class="text-primary">User Name</label>
+			    		    <input class="form-control" name="username"  id="username" type="text" required="required">
 			    		</div>
-			    		<div class="form-group">
-							<label for="pass" class="text-primary" style="color: #ff0006">Password</label>
-			    			<input class="form-control" id="pass" name="password" type="password" value="" required>
+			    		<div class="form-group" style="color: #ff0006; margin-top: 20px;">
+							<label for="password" class="text-primary" style="padding: 10px 5px;">Password</label>
+			    			<input class="form-control" id="password" name="password" type="password" value="" required="required">
 			    		</div>
 						
 						<div class="form-group text-center">
-			    		    <button class="btn btn-lg btn-default" name="submit" type="submit"><i class="fa fa-sign-in"></i> Login Here</button>
+			    		    <button class="btn btn-lg btn-default" name="submit" type="submit">Login Here</button>
 			      	
                         </div>
                     </form>
@@ -135,8 +139,13 @@
 
   
     <?php 
-  //include admin footer file
+    //include admin footer file
 
-    //include ('admin-footer.php');
+    include ('admin-footer.php');
 
     ?>
+
+
+</body>
+			
+</html>

@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<body>
 <?php 
 
 	//include header file
@@ -83,11 +80,11 @@ include ('includes/header.php');
                   </div>
 
                   <div class="carousel-item">
-                      <img src="images/slide-2.png" class="d-block w-100" alt="...">
+                      <img src="images/slide2.png" class="d-block w-100" alt="...">
                   </div>
 
                   <div class="carousel-item">
-                      <img src="images/slide-3.png" class="d-block w-100" alt="...">
+                      <img src="images/slide3.png" class="d-block w-100" alt="...">
                   </div>
 
               </div>
@@ -216,6 +213,22 @@ include ('includes/header.php');
 include ('includes/footer.php');
 
 ?>
+
+
+
+<!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+	
+	$(".img-portfolio").click(function(){
+		var a=$(this).attr("src");
+		$("#ModalImg").attr("src",a);
+       $('#myModal').modal();
+    })
+    </script>
+
 
 </body>
 </html>

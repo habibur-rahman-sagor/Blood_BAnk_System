@@ -52,10 +52,6 @@ include('../database/blood_bank.php');
 
 
 
-        
-
-
-
 <div class="container" >
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -65,12 +61,16 @@ include('../database/blood_bank.php');
             <table class="table ">
 			<tr>
 				<th>S.No.</th>
-				<th>Name</th>
+				<th>First Name</th>
+                <th>Last Name</th>
 				<th>Gender</th>
-				<th>Blood</th>
+				<th>Blood Group</th>
+                <th>Country</th>
+                <th>Division</th>
 				<th>City</th>
-				<th>Division</th>
 				<th>Contact</th>
+				<th>Email</th>
+                <th>Password</th>
 				<th>Delete</th>
 				
 				</tr>
@@ -89,26 +89,35 @@ include('../database/blood_bank.php');
 
                                 $donor_id = $rows['donor_id'];
                                 $First_Name = $rows['First_Name'];
+                                $Last_Name = $rows['Last_Name'];
                                 $Gender = $rows['Gender'];
                                 $Blood_Group = $rows['Blood_Group'];
-                                $City = $rows['City'];
+                                $Country = $rows['Country'];
                                 $Division = $rows['Division'];
+                                $City = $rows['City'];
                                 $Contact = $rows['Contact'];
-
-                                ?>
-                                <tr>
-                                    <td><?php echo $donor_id; ?></td>
-                                    <td><?php echo $First_Name; ?></td>
-                                    <td><?php echo $Gender; ?></td>
-                                    <td><?php echo $Blood_Group; ?></td>
-                                    <td><?php echo $City; ?></td>
-                                    <td><?php echo $Division; ?></td>
-                                    <td><?php echo $Contact; ?></td>
-                                    <td>
-                                        <a href="#">delete</a>
-                                    </td>
+                                $Email = $rows['Email'];
+                                $Password = $rows['Password'];
+                                
+                                
+                ?>
+                                    <tr>
+                                        <td><?php echo $donor_id; ?></td>
+                                        <td><?php echo $First_Name; ?></td>
+                                        <td><?php echo $Last_Name; ?></td>
+                                        <td><?php echo $Gender; ?></td>
+                                        <td><?php echo $Blood_Group; ?></td>
+                                        <td><?php echo $Country; ?></td>
+                                        <td><?php echo $Division; ?></td>
+                                        <td><?php echo $City; ?></td>
+                                        <td><?php echo $Contact; ?></td>
+                                        <td><?php echo $Email; ?></td>
+                                        <td><?php echo $Password; ?></td>
+                                        <td>
+                                            <a href="admin-delete-donor.php" class="btn btn-danger btn-xs">Delete</a>
+                                        </td>
                                     
-                                </tr>
+                                    </tr>
 
                                 <?php
                             }

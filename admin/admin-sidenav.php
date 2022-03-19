@@ -86,21 +86,21 @@
 
 <div class="sidebar-container">
   
-  <ul class="sidebar-navigation">
-    <li><a href="admin-dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-    <li><a href="admin-inbox.php"><i class="fa fa-envelope fa-lg"></i> Inbox</a></li>
-	<li><a href="admin-search-donor.php"><i class="fa fa-search fa-lg"></i>Search Donors</a></li>
-	<li><a href="admin-donor-details.php"><i class="fa fa-users "></i> Donors Details</a></li>
-	<li><a href=""><i class="fa fa-bed fa-lg"></i> Need Blood</a></li>
-	<hr>
-	<li><a href="#add" data-toggle="collapse" ><i class="fa fa-cogs fa-lg"></i> Settings</a></li>
-	<ul class="nav collapse" id="add">
-		<li><a href="admin_country.php"><i class="fa fa-plus fa-lg"></i> Add Country</a>
-		<li><a href="admin_state.php"><i class="fa fa-plus fa-lg"></i> Add State</a></li>
-		<li><a href="admin_city.php"><i class="fa fa-plus fa-lg"></i> Add City</a></li>
-		<li><a href="admin_area.php"><i class="fa fa-plus fa-lg"></i> Add Area</a></li>
-		
-	</ul>
+    <ul class="sidebar-navigation">
+      <li><a href="admin-dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li><a href="admin-inbox.php"><i class="fa fa-envelope fa-lg"></i> Inbox</a></li>
+      <li><a href="admin-search-donor.php"><i class="fa fa-search fa-lg"></i>Search Donors</a></li>
+      <li><a href="admin-donor-details.php"><i class="fa fa-users "></i> Donors Details</a></li>
+      <li><a href=""><i class="fa fa-bed fa-lg"></i> Need Blood</a></li>
+      
+      <hr>
+      <li><a href="#add" data-toggle="collapse" ><i class="fa fa-cogs fa-lg"></i> Settings</a></li>
+      <ul class="nav collapse" id="add">
+        <li><a href="admin_country.php"><i class="fa fa-plus fa-lg"></i> Add Country</a>
+        <li><a href="admin_state.php"><i class="fa fa-plus fa-lg"></i> Add Division</a></li>
+        <li><a href="admin_city.php"><i class="fa fa-plus fa-lg"></i> Add City</a></li>
+        
+      </ul>
   </ul>
   <hr>
 </div>

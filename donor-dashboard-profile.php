@@ -18,10 +18,9 @@
     color: #ff0006;
 }
 
-  .donor-update{
+  .donor-profile{
     margin-top: 20px;
-   
-    padding: 50px 70px;
+    padding: 60px 80px;
     background-color: #151515;
     color: white;
 }
@@ -31,7 +30,7 @@
 
 
 
-<div class="container"  style='margin-top: 62px;'>
+<div class="container"  style='margin-top: 56px;'>
 	<div class="row">
 		<div>
             <?php include('donor-dashboard-sidenav.php'); ?>
@@ -57,11 +56,11 @@
 
 
         
-    <div class="container" style="padding: 60px 20px; margin-right:10px;">
+    <div class="container" style="padding: 60px 0px; margin-right: 20px;">
 			<div class="row">
                 
 				    <div class=" card col-md-6 offset-md-3">
-                        <div class="donor-update">
+                        <div class="donor-profile">
 					        <div class="panel panel-default" style="padding: 20px;">
 					
 					            <!-- Error Messages -->	<?php
@@ -77,12 +76,14 @@
                                                     $First_Name=$row['First_Name'];
 													$Last_Name=$row['Last_Name'];
                                                     $Gender=$row['Gender'];
+                                                    $DOB=$row['DOB'];
                                                     $Blood_Group=$row['Blood_Group'];
+                                                    $Country=$row['Country'];
 													$Division=$row['Division'];
                                                     $City=$row['City'];
-                                                    
 													$Contact=$row['Contact'];
 													$Email=$row['Email'];
+                                                    $Password=$row['Password'];
                                                 
                                                 ?>
 
@@ -108,7 +109,7 @@
 
                                     <div class="form-group">
 								        <label for="DOB">Date of Birth</label>
-								        <input type="text" required name="DOB" class="form-control" value="<?php echo  $First_Name; ?>">
+								        <input type="text" required name="DOB" class="form-control" value="<?php echo  $DOB; ?>">
 							        </div>
 
 							        <div class="form-group">
@@ -118,7 +119,7 @@
 
                                     <div class="form-group">
                                         <label for="Country">Country</label>
-								        <input type="text" required name="Country" class="form-control" value="<?php echo  $First_Name; ?>">
+								        <input type="text" required name="Country" class="form-control" value="<?php echo  $Country; ?>">
                                     </div>
 
 
@@ -152,7 +153,7 @@
 
                                     <div class="form-group">
 								        <label for="Password">Password</label>
-								        <input type="text" required name="Password" class="form-control" value="<?php echo  $First_Name; ?>">
+								        <input type="text" required name="Password" class="form-control" value="<?php echo  $Password; ?>">
 							        </div>
 							
 							    

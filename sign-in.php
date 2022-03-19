@@ -16,8 +16,10 @@
     }
 
     .signin-form{
-        padding: 50px 0px;
-        background-color: #E2E5DE;
+        padding: 30px 30px;
+        margin: 30px 0px;
+        background-color: #151515;
+        border-radius: 10px;
     }
     
 
@@ -25,10 +27,10 @@
     color: white;
     border-radius: 25px;
     padding: 10px 30px;
-    margin-bottom: 30px;
+    margin: 10px 0px;
     font-size: 22px;
     font-weight: 700;
-    background-color:#ff0006;
+    background-color: #ff0006;
   }
     
 
@@ -55,21 +57,23 @@
                 <div class="signin-form">
                     <form action="" method="post">
 
-                      <h4 class="text-center" style="padding-bottom: 20px;">Enter Login Details</h4>
+                      <h4 class="text-center" style="padding-bottom: 20px; color: #ff0006">Enter Login Details</h4>
       
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="Email" placeholder="Email" required="required">
+                          <div class="form-group" style="color: #ff0006;">
+                              <label class="control-label" for="Email" >Email</label>
+                              <input type="email" class="form-control" name="Email" placeholder="Email" required="required">
                           </div>
 
-                      <div class="form-group">
-                              <input type="password" class="form-control" name="Password" placeholder="Password" required="required">
+                          <div class="form-group" style="color: #ff0006;">
+                              <label class="control-label" for="Password" >Password</label>
+                              <input type="Password" class="form-control" name="Password" placeholder="Password" required="required">
                           </div>
 
                       <div class="form-group text-center">
                               <button type="submit" name="submit" class="btn btn-lg btn-default">Login</button>
                           </div>
 
-                          <div class="text-center">
+                          <div class="text-center" style="color: #ff0006">
                               Don't have an account? <a href="donate.php">Register Here</a>
                           </div>
 
@@ -118,7 +122,7 @@
             //User not Available and Login FAil
             $_SESSION['login'] = "<div class='error text-center'>Username or Password did not match.</div>";
             //Redirect to HOme Page/Dashboard
-            echo "<script>alert(' Not logged In.')</script>";
+            echo "<script>alert(' Not Registered.')</script>";
             echo"<script> window.open('sign-in.php','_self')</script>";
         }
 
